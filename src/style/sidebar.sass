@@ -2,19 +2,21 @@
 
 aside
 	position: relative;
-	background: $c-gray;
+	background: $c-black;
 	height: auto;
 	width: 100%;
 
 	h1
 		text-transform: uppercase;
+		font-family: 'bold';
 		font-size: 22px;
 		background: $c-black;
 		color: $c-white;
 		padding: 10px;
 
 		+ p
-			padding: 10px;
+			padding: 0 10px 10px 10px;
+			font-family: 'bold';
 			text-transform: uppercase;
 			background: linear-gradient(10deg, #006EFF, #8800FF);
 			-webkit-background-clip: text;
@@ -29,7 +31,6 @@ aside
 		position: fixed;
 		background: transparent;
 		height: 100%;
-		width: 600px;
 		top: 0;
 		bottom: 0;
 		z-index: 0;
@@ -43,5 +44,17 @@ aside
 			background: $c-gray;
 			bottom: -300px;
 			left: -500px;
-			width: 800px;
+			width: 1000px;
 			z-index: -1;
+
+		h1
+			position: relative;
+			padding: 15px 10px 15px 40px;
+			top: 200px;
+			font-size: 34px;
+			+ p
+				position: relative;
+				top: 205px;
+				padding: 10px 10px 10px 40px;
+				font-size: 18px;
+
