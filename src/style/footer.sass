@@ -1,0 +1,40 @@
+@import _variables
+
+footer
+	position: relative;
+	padding: 10px
+	background: $c-black;
+
+	.twitter,
+	.legal
+		display: inline-block;
+		text-transform: uppercase;
+
+	.twitter
+		color: $c-white
+		margin-right: 15px;
+		&::before
+			content: '@';
+			display: inline-block;
+			margin-right: 2px;
+			color: $c-violet;
+
+	.legal
+		color: darken($c-gray, 10%);
+
+	@media screen and (min-width: 768px)
+		background: transparent;
+		position: fixed;
+		left: 40px;
+		bottom: 40px;
+		width: 200px;
+		height: 80px;
+
+		.twitter
+			color: $c-black
+			margin-right: 0;
+			
+		.legal
+			position: absolute;
+			left: 10px;
+			bottom: 10px;
