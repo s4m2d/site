@@ -1,12 +1,6 @@
 @import _variables
 
 @font-face
-	font-family: 'bold';
-	src: url('../../media/font/karla-bold-webfont.woff2') format('woff2'), url('../../media/font/karla-bold-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-
-@font-face
 	font-family: 'regular';
 	src: url('../../media/font/karla-regular-webfont.woff2') format('woff2'), url('../../media/font/karla-regular-webfont.woff') format('woff');
 	font-weight: normal;
@@ -22,6 +16,7 @@ html
 *
 	margin: 0;
 	padding: 0;
+	font-weight: 300;
 	border: none;
 	outline: none;
 	text-decoration: none;
@@ -110,6 +105,10 @@ footer
 			width: 40px;
 			height: 40px;
 			margin-left: 13px;
+			border: none;
+			&:hover
+				.social-icon
+					fill: #F41F48;
 
 	main
 		position: relative;
