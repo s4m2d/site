@@ -6,7 +6,7 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "npm run sass && npm run js",
-		"sass": "node-sass src/style/ -o docs/build/modules/ --output-style=compressed",
+		"sass": "node-sass src/style/ -o docs/build/ --output-style=compressed",
 		"js": "uglifyjs src/js/*.js -o docs/build/app.js",
 		"watch": "watch -p \"src/style/*.sass\" -p \"src/js/*.js\" -c \"npm run build\""
 	},
