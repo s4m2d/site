@@ -1,0 +1,70 @@
+.gallery {
+	figure {
+		float: left;
+		width: 50%;
+		display: block;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+			line-height: 0;
+			display: block;
+		}
+
+		figcaption {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+			strong {
+				font-size: 54px;
+				color: $color-white;
+				display: block;
+				font-weight: bold;
+				text-align: center;
+				margin-top:36%;
+			}
+
+			time {
+				font-size: 22px;
+				display: block;
+				text-align: center;
+				color: $color-white;
+			}
+
+			a {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				display: block;
+			}
+		}
+
+		&:hover {
+			img {
+				opacity: 0.5;
+			}
+	
+			figcaption {
+				transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.gallery {
+		figure {
+			float: none;
+			width: 100%;
+		}
+	}
+}

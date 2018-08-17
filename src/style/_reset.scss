@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	font-style: normal;
+	font-weight: normal;
+	font-family: 'robotoregular', sans-serif;
+	font-size: 18px;
+}
+
+a {
+	color: $color-cta;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+}
+
+::selection {
+	background: lighten($color-cta, 10%);
+	color: $color-white;
+}
+
+-moz-::selection {
+	background: lighten($color-cta, 10%);
+	color: $color-white;
+}
+
+.clr {
+	clear: both;
+}
+
+.cta {
+	position: relative;
+	text-decoration: none;
+	font-size: 12px;
+	letter-spacing: 0.2rem;
+	background: $color-cta;
+	color: $color-white;
+	display: inline-block;
+	padding: 3px 15px 5px 15px;
+	border: solid 1px $color-cta;
+	border-radius: $border-radius;
+	text-transform: uppercase;
+	box-shadow: 0 5px 20px rgba($color-cta, 0.3);
+	cursor: pointer;
+	text-align: center;
+	will-change: transform;
+	transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+	&:hover {
+		transform: scale(1.1, 1.1);
+		transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		max-width: 1000px;
+	}
+}
