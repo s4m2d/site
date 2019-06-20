@@ -1,0 +1,66 @@
+#searchbar {
+  height: 60px;
+  background: $c_white;
+  border-radius: $border-radius-soft;
+  margin: 0 auto $grid auto;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .search-container{
+    float: right;
+    width: 360px;
+    margin: $grid / 4 $grid $grid / 4 0;
+  }
+
+  ul {
+    margin: 0 0 0 $grid / 4;
+    float: left;
+    li {
+      display: block;
+      float: left;
+      a {
+        display: block;
+        padding: 10px $grid / 2;
+        height: $grid * 1.5;
+        font-size: $fontSizeSmall;
+        box-sizing: border-box;
+        line-height: $grid / 1;
+        color: darken($c_bg, 15%);
+        font-family: 'headline', sans-serif;
+        text-transform: uppercase;
+        @include transition();
+        &:hover {
+          background: darken($c_bg, 15%);
+          color: $c_white;
+          @include transition();
+        }
+      }
+    }
+  }
+
+  button {
+    float: left;
+    background: url('../assets/icn_search.svg') no-repeat center center $c_prime;
+    background-size: 30px 30px;
+    width: $grid * 1.5;
+    height: $grid;
+    border-radius: 0 $border-radius-full $border-radius-full 0;
+    text-indent: -300px;
+    overflow: hidden;
+    @include transition();
+    &:hover {
+      @include transition();
+      background: url('../assets/icn_search.svg') no-repeat center center darken($c_prime, 10%);
+      background-size: 30px 30px;
+    }
+  }
+  input {
+    float: left;
+    background: $c_bg;
+    height: $grid;
+    width: 300px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border-radius: $border-radius-full 0 0 $border-radius-full;
+  }
+}

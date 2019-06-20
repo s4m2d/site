@@ -1,0 +1,49 @@
+nav.main {
+  background: rgba( $c_dark, .4 );
+  height: 60px;
+  position: relative;
+  border-radius: $border-radius-soft;
+
+  > a {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    display: block;
+    line-height: 80px;
+    color: $c_white;
+    font-family: 'headline', sans-serif;
+    text-transform: uppercase;
+    img {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+
+  ul {
+    float: right;
+    display: block;
+    height: 60px;
+
+    li {
+      display: block;
+      float: left;
+      height: 60px;
+      border-left: rgba( $c_white, .1 );
+
+      a {
+        color: $c_white;
+        font-family: 'headline', sans-serif;
+        padding: 0 30px;
+        display: block;
+        height: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        @include transition( background, 0.2 );
+        &:hover {
+          @include transition( background, 0.2 );
+          background: rgba(0,0,0,.2);
+        }
+      }
+    }
+  }
+}

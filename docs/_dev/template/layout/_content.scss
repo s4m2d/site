@@ -1,0 +1,7 @@
+main {
+  margin: $grid 0 0 0;
+}
+img.ready {
+  opacity: 1;
+  @include transition(opacity, .25s);
+}

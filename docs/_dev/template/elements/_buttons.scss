@@ -1,0 +1,8 @@
+.btn {
+  padding: $grid / 4 $grid / 2;
+  &.more {
+    color: $c_white;
+    border-radius: $border-radius-full;
+    background: $c_prime;
+  }
+}
