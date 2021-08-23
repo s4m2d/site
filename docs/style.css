@@ -54,6 +54,7 @@ p a:hover {
 }
 
 small {
+    color: #444;
     display: block;
     margin: auto;
     position: absolute;
@@ -84,7 +85,6 @@ small a {
 
     small {   
         width: 100%;
-        
         left: 0;
         box-sizing: border-box;
         background: #1D1F23;
