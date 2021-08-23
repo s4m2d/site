@@ -1,7 +1,0 @@
-@mixin transition( $attr: all, $time: 0.2, $easing: ease-out ){
-  -webkit-transition: $attr $time+s ease-in-out;
-  -moz-transition: $attr $time+s ease-in-out;
-  -ms-transition: $attr $time+s ease-in-out;
-  -o-transition: $attr $time+s ease-in-out;
-  transition: $attr $time+s ease-in-out;
-}
