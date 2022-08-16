@@ -1,0 +1,67 @@
+@font-face {
+	font-family: 'yantramanavblack';
+	src: url('font/yantramanav-black.woff2') format('woff2'),
+		url('font/yantramanav-black.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	list-style: none;
+	font-weight: normal;
+	font-family: Futura, Helvetica, Arial, sans-serif;
+}
+
+::selection {
+		background: #f2ff00;
+		color: #000;
+	}
+
+::-moz-selection {
+	background: #f2ff00;
+	color: #000;
+}
+
+html {
+	background :#000;
+}
+
+body {
+	background: rgb(244, 244, 244) url('assets/background-pattern.png');
+	overflow-x: hidden;
+}
+
+main {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	margin: 0 5%;
+	padding-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'yantramanavblack';
+	font-size: 162px;
+	span,
+	.glitch {
+		font-family: 'yantramanavblack';
+		font-size: 162px;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	main {
+		padding-top: 80px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	main {
+		max-width: 1100px;
+		margin: auto;
+	}
+}

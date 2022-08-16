@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+
+	<head>
+		<title>Sam | Design Specialist | Kontakt</title>
+		<meta charset="utf-8">
+		<meta name="description"
+			content="Sam erstellt Brand identeties, Corporate Designs, Websites, Grafiken and Videospiele.">
+		<meta name="keywords" content="Webdesign, ArtDirection, Grafikdesign, CD, CI, pixelart, ドット絵">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@s4m_ur4i">
+		<meta name="twitter:creator" content="@s4m_ur4i">
+		<meta name="twitter:title" content="Sam | Design Specialist">
+		<meta name="twitter:description"
+			content="Sam erstellt Brand identeties, Corporate Designs, Websites, Grafiken and Videospiele.">
+		<meta name="twitter:image" content="https://samvieten.com/assets/socialmedia/twitter-cover.jpg">
+		<meta property="og:url" content="https://samvieten.com">
+		<meta property="og:type" content="article">
+		<meta property="og:title" content="Sam | Design Specialist">
+		<meta property="og:description"
+			content="Sam erstellt Brand identeties, Corporate Designs, Websites, Grafiken and Videospiele.">
+		<meta property="og:image" content="https://samvieten.com/assets/socialmedia/facebook-cover.jpg">
+		<link rel="icon" type="shortcut/icon" href="assets/logo.svg">
+	</head>
+
+</head>
+
+<body>
+	<div class="decoration"></div>
+	<div class="border-left"></div>
+	<div class="border-right"></div>
+	<div class="border-top"></div>
+	<div class="border-bottom"></div>
+	<main>
+		<div class="background"></div>
+		<nav>
+			<span class="main">
+				<a href="index.html">Start</a>
+				<a href="projekte.html">Projekte</a>
+				<a href="ueber.html">Über</a>
+				<a href="kontakt.html">Kontakt</a>
+			</span>
+
+			<img src="assets/logo.svg" />
+
+			<span class="social-links">
+				<a target="_blank" href="https://twitter.com/s4m_ur4i"><img src="assets/icon-twitter.svg" /></a>
+				<a target="_blank" href="https://dribbble.com/s4m_ur4i"><img src="assets/icon-dribbble.svg" /></a>
+				<a target="_blank" href="https://s4m-ur4i.itch.io/"><img src="assets/icon-itch.svg" /></a>
+				<a target="_blank" href="https://www.linkedin.com/in/sam-vieten-6a5424171/"><img src="assets/icon-linkedin.svg" /></a>
+				<a target="_blank" href="https://www.xing.com/profile/Sam_Vieten/cv"><img src="assets/icon-xing.svg" /></a>
+			</span>
+		</nav>
+
+		<article class="contact">
+			<h1>
+				Kontakt
+			</h1>
+			<p>
+				Sam Vieten<br />
+				<br />
+				<a href="mailto:info@samvieten.com">info@samvieten.com</a><br />
+				<a href="https://twitter.com/s4m_ur4i" target="_blank">@s4m_ur4i</a><br />
+				<br />
+				Mo &mdash; Fr: 10 bis 19 Uhr
+			</p>
+			<section class="twitter-feed">
+				<script>
+					window.addEventListener("load", (event) => {
+						if (localStorage.getItem('consentAgreement') == "all") {
+							const twitterHTML = '<a data-tweet-limit="4" class="twitter-timeline" href="https://twitter.com/s4m_ur4i?ref_src=twsrc%5Etfw">Tweets by s4m_ur4i</a>';
+							let wrapper = document.createElement('div');
+							wrapper.innerHTML = twitterHTML;
+							document.getElementsByClassName("twitter-feed")[0].appendChild(wrapper);
+
+							window.twttr = (function (d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0],
+									t = window.twttr || {};
+								if (d.getElementById(id)) return t;
+								js = d.createElement(s);
+								js.id = id;
+								js.src = "https://platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js, fjs);
+
+								t._e = [];
+								t.ready = function (f) {
+									t._e.push(f);
+								};
+
+								return t;
+							}(document, "script", "twitter-wjs"));
+
+							twttr.widgets.createTimeline(
+								{
+									sourceType: "profile",
+									screenName: "s4m_ur4i",
+									url: "https://twitter.com/s4m_ur4i",
+									maxheight: 400,
+									dnt: true,
+
+
+								},
+								document.getElementsByClassName("twitter-feed")[0]
+							);
+						}
+					});
+				</script>
+			</section>
+		</article>
+	</main>
+
+	<footer>
+		<div>
+			2022 @ Sam Vieten | <br /> <a href="legal.html">Datenschutz</a> | <a href="legal.html">Impressum</a> | <a
+				href="kontakt.html">Kontakt</a>
+		</div>
+	</footer>
+
+		<link type="text/css" href="main.css" rel="stylesheet" />
+		<link type="text/css" href="contact.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@900&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="consent.js" defer></script>
+
+</body>
+
+</html>

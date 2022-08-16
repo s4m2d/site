@@ -1,0 +1,91 @@
+.overlay {
+	background: rgba(0, 0, 17, .85);
+	backdrop-filter: blur(4px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+}
+.consent {
+	position: fixed;
+	width: 320px;
+	height: auto;
+	left: 50%;
+	margin-left: -160px;
+	top: 50%;
+	margin-top: -200px;
+	background: rgba(255,255,255,1);
+	border-radius: 12px;
+	padding: 20px;
+	box-sizing: border-box;
+	z-index: 4;
+
+	form {
+		margin-bottom: 15px;
+
+		input {
+			display: inline-block;
+			margin-right: 10px;
+			cursor: pointer;
+			width: 40px;
+			height: 20px;
+			margin-top: 5px;
+		}
+
+		button {
+			position: absolute;
+			padding: 10px 15px;
+			border-radius: 6px;
+			bottom: 10px;
+			right: 10px;
+			width: calc(30% - 20px);
+			color: #fff;
+			background: #000011;
+			font-size: 1em;
+			box-sizing: border-box;
+			transition: background 0.2s ease-out;
+
+			&:hover {
+				background: rgba(0, 0, 17, .5);
+				transition: background 0.2s ease-in;
+				cursor: pointer;
+			}
+		}
+	}
+
+	strong {
+		font-weight: bold;
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	label {
+		display: inline-block;
+		margin-bottom: 5px;
+
+		&.error {
+			color: red;
+		}
+	}
+
+	p {
+		color: #000;
+		box-sizing: border-box;
+		padding-bottom: 60px;
+	}
+
+	a {
+		color:rgba(0, 0, 17, .5);
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+	.consent {
+		width: 620px;
+		margin-left: -310px;
+		margin-top: -120px;
+	}
+}

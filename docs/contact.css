@@ -1,0 +1,35 @@
+article.contact {
+  position: relative; }
+  article.contact p {
+    float: none;
+    width: calc(100% + 40px);
+    box-sizing: border-box;
+    left: -20px;
+    padding: 40px 80px 40px 60px; }
+    article.contact p:last-of-type {
+      margin-bottom: 40px; }
+
+.twitter-feed {
+  display: none;
+  top: 0;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  float: right;
+  overflow: scroll;
+  max-height: 500px; }
+
+@media screen and (min-width: 680px) {
+  article.contact p {
+    width: 44%;
+    left: auto;
+    box-sizing: unset; } }
+
+@media screen and (min-width: 1100px) {
+  article.contact p {
+    float: left;
+    left: 40px; }
+  .twitter-feed {
+    display: block; } }
+
+/*# sourceMappingURL=contact.css.map */

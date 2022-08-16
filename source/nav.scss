@@ -1,0 +1,140 @@
+nav {
+	background: linear-gradient(to right, rgba(255,255,255,0.5), rgba(0, 0, 17, 0.35));
+	height: 45px;
+	width: calc(100% + 80px);
+	position: relative;
+	z-index: 1;
+	left: -40px;
+	right: -40px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	box-shadow: 0 15px 15px rgba(64, 64, 133, 0.13);
+
+	&.sub {
+		margin-top: 40px;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: #000;
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 16px;
+		transition: color 0.1s ease-out;
+
+		&:hover {
+			color: rgba(#000011, 0.3);
+			transition: color 0.1s ease-in;
+		}
+	}
+
+	.main {
+		padding: 12px 20px 12px 160px;
+		position: relative;
+		float: left;
+
+		&::after {
+			content: '';
+			background: rgba(0,0,0,.15);
+			display: block;
+			width: 80px;
+			transform: skew(-12deg);
+			position: absolute;
+			right: -80px;
+			height: 45px;
+			top: 0;
+		}
+	}
+
+	.social-links {
+		padding-right: 40px;
+		display: none;
+		float: right;
+
+		a {
+			color: transparent;
+			display: inline-block;
+			height: 34px;
+			width: 34px;
+			border-radius: 60px;
+			position: relative;
+			margin: 5px 0 0 10px;
+
+			&:hover {
+				img {
+					transform: scale(1.1, 1.1);
+					transition: transform 0.1s ease-in;
+				}
+			}
+
+			img {
+				transition: transform 0.1s ease-out;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: auto;
+				height: 20px;
+				padding: 7px;
+			}
+		}
+	}
+
+	> img {
+		width: 120px;
+		height: auto;
+		margin-left: -60px;
+		left: 80px;
+		position: absolute;
+		top: -15px;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	nav {
+
+		a {
+			margin-right: 20px;
+		}
+	}
+}
+
+@media screen and (min-width: 680px) {
+	nav {
+
+		&.sub {
+				margin-top: 80px;
+		}
+
+		.main {
+			padding-left: 60px;
+		}
+
+		>img {
+			left: 50%;
+		}
+		.social-links {
+			display: block;
+		}
+
+		a {
+			margin-right: 10px;
+		}
+	}
+}
+
+@media screen and (min-width: 900px) {
+	nav {
+		margin-bottom: 80px;
+
+		>img {
+			width: 200px;
+			top: -40px;
+			margin-left: -100px;
+		}
+
+		a {
+			margin-right: 20px;
+			font-size: 18px;
+		}
+	}
+}

@@ -1,0 +1,274 @@
+.profile {
+  background: #f0f0f0;
+  padding: 320px 0px 60px 0px;
+  margin-top: -160px;
+  line-height: 180px;
+  border-radius: 0;
+  text-align: center;
+  color: #ccc;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); }
+  .profile::after {
+    content: '';
+    background: #f0f0f0;
+    width: 200%;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    z-index: -1; }
+  .profile .image {
+    display: block;
+    width: 300px;
+    height: 480px;
+    background: #000011;
+    opacity: .82;
+    position: fixed;
+    z-index: 1;
+    right: 50%;
+    top: 200px;
+    margin-right: -150px;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden; }
+    .profile .image img {
+      position: absolute;
+      left: -10%;
+      width: 120%;
+      height: auto;
+      opacity: 0.1;
+      transition: opacity 0.2s ease-in-out; }
+    .profile .image.small {
+      width: 100px;
+      height: 160px;
+      transition: all 0.25s ease-in-out;
+      margin-right: -50px;
+      right: 50%; }
+      .profile .image.small img {
+        opacity: 0.35;
+        transition: opacity 0.2s ease-in-out; }
+    .profile .image.left {
+      display: none;
+      width: 300px;
+      height: 480px;
+      left: auto;
+      right: 60%;
+      transition: all 0.25s ease-in-out;
+      margin: 0; }
+      .profile .image.left img {
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out; }
+  .profile .glitch {
+    font-size: 80px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: 259px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(22px, 9999px, 9px, 0); }
+  5% {
+    clip: rect(31px, 9999px, 93px, 0); }
+  10% {
+    clip: rect(73px, 9999px, 22px, 0); }
+  15% {
+    clip: rect(28px, 9999px, 68px, 0); }
+  20% {
+    clip: rect(90px, 9999px, 50px, 0); }
+  25% {
+    clip: rect(90px, 9999px, 68px, 0); }
+  30% {
+    clip: rect(45px, 9999px, 37px, 0); }
+  35% {
+    clip: rect(52px, 9999px, 11px, 0); }
+  40% {
+    clip: rect(69px, 9999px, 16px, 0); }
+  45% {
+    clip: rect(25px, 9999px, 63px, 0); }
+  50% {
+    clip: rect(29px, 9999px, 54px, 0); }
+  55% {
+    clip: rect(39px, 9999px, 89px, 0); }
+  60% {
+    clip: rect(20px, 9999px, 68px, 0); }
+  65% {
+    clip: rect(86px, 9999px, 80px, 0); }
+  70% {
+    clip: rect(38px, 9999px, 33px, 0); }
+  75% {
+    clip: rect(93px, 9999px, 99px, 0); }
+  80% {
+    clip: rect(9px, 9999px, 4px, 0); }
+  85% {
+    clip: rect(41px, 9999px, 83px, 0); }
+  90% {
+    clip: rect(46px, 9999px, 87px, 0); }
+  95% {
+    clip: rect(11px, 9999px, 60px, 0); }
+  100% {
+    clip: rect(61px, 9999px, 3px, 0); } }
+  .profile .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 #a73323;
+    top: 0;
+    color: #fff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse; }
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(136px, 9999px, 20px, 0); }
+  5% {
+    clip: rect(108px, 9999px, 148px, 0); }
+  10% {
+    clip: rect(33px, 9999px, 15px, 0); }
+  15% {
+    clip: rect(136px, 9999px, 5px, 0); }
+  20% {
+    clip: rect(161px, 9999px, 60px, 0); }
+  25% {
+    clip: rect(55px, 9999px, 134px, 0); }
+  30% {
+    clip: rect(154px, 9999px, 44px, 0); }
+  35% {
+    clip: rect(22px, 9999px, 152px, 0); }
+  40% {
+    clip: rect(90px, 9999px, 23px, 0); }
+  45% {
+    clip: rect(32px, 9999px, 60px, 0); }
+  50% {
+    clip: rect(14px, 9999px, 131px, 0); }
+  55% {
+    clip: rect(3px, 9999px, 92px, 0); }
+  60% {
+    clip: rect(23px, 9999px, 76px, 0); }
+  65% {
+    clip: rect(178px, 9999px, 82px, 0); }
+  70% {
+    clip: rect(33px, 9999px, 75px, 0); }
+  75% {
+    clip: rect(25px, 9999px, 100px, 0); }
+  80% {
+    clip: rect(189px, 9999px, 60px, 0); }
+  85% {
+    clip: rect(39px, 9999px, 182px, 0); }
+  90% {
+    clip: rect(169px, 9999px, 124px, 0); }
+  95% {
+    clip: rect(106px, 9999px, 54px, 0); }
+  100% {
+    clip: rect(168px, 9999px, 14px, 0); } }
+  .profile .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 1px 0 #9e9bc3;
+    top: 0;
+    color: #fff;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse; }
+  .profile h1 {
+    position: relative;
+    top: -100px; }
+    .profile h1 span {
+      display: block;
+      position: relative;
+      z-index: 1; }
+      .profile h1 span:nth-of-type(2) {
+        font-size: 80px;
+        margin-top: 80px;
+        color: rgba(0, 0, 17, 0.35);
+        width: 100%;
+        line-height: 80px;
+        letter-spacing: 20px;
+        z-index: 0;
+        background-image: url("assets/floral-background.png");
+        background-size: contain;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent; }
+      .profile h1 span:nth-of-type(3) {
+        font-size: 42px;
+        line-height: 120px;
+        text-transform: uppercase;
+        letter-spacing: 17px;
+        position: relative;
+        opacity: 0; }
+      .profile h1 span:nth-of-type(4) {
+        display: block;
+        font-size: 30px;
+        line-height: 60px;
+        letter-spacing: 10px;
+        color: rgba(0, 0, 17, 0.35); }
+  .profile .scroll {
+    position: relative;
+    bottom: 20px;
+    height: 0;
+    width: 10px;
+    left: 50%;
+    margin-left: -5px; }
+    .profile .scroll span {
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+      top: 0;
+      position: relative;
+      background: rgba(0, 0, 17, 0.35);
+      opacity: 0;
+      animation: scroll 4s infinite linear; }
+      .profile .scroll span:nth-of-type(2) {
+        top: 15px;
+        animation-delay: 1s; }
+      .profile .scroll span:nth-of-type(3) {
+        top: 30px;
+        animation-delay: 2s; }
+
+@keyframes scroll {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+@media screen and (min-width: 680px) {
+  .profile {
+    padding: 320px 0px 60px 0px; }
+    .profile .image.left {
+      display: block; }
+      .profile .image.left img {
+        opacity: 0.55; }
+    .profile .glitch {
+      font-size: 162px;
+      line-height: 180px;
+      width: 524px; }
+    .profile h1 span:nth-of-type(2) {
+      font-size: 80px;
+      left: -50%;
+      margin-top: 0;
+      width: 200%;
+      line-height: 180px; } }
+
+@media screen and (min-width: 900px) {
+  .profile {
+    padding: 320px 80px 160px 80px; }
+    .profile h1 {
+      top: -100px; }
+      .profile h1 span:nth-of-type(2) {
+        font-size: 160px; } }
+
+@media screen and (min-width: 1280px) {
+  .profile h1 span:nth-of-type(2) {
+    font-size: 214px; } }
+
+/*# sourceMappingURL=index.css.map */
