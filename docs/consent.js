@@ -12,12 +12,6 @@ window.addEventListener("load", (event) => {
 		const consentInput = consentBox.getElementsByTagName("input");
 		const consentLabels = consentBox.getElementsByTagName("label");
 
-		for(let label in consentLabels.length) {
-			consentLabels[label].addEventListener("click", ()=>{
-
-			});
-		}
-
 		consentBTN.addEventListener("click", ()=>{
 			if (consentInput[0].checked || consentInput[1].checked) {
 
