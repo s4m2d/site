@@ -22,10 +22,10 @@ article {
 			box-sizing: border-box;
 			display: block;
 			border-left: solid 2px transparent;
-			transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-out;
 
 			&:hover:not(:first-of-type){
-				transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in;
 				opacity: 0.6;
 				cursor: pointer;
 			}

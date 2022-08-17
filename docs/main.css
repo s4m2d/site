@@ -173,9 +173,9 @@ article figure {
     box-sizing: border-box;
     display: block;
     border-left: solid 2px transparent;
-    transition: opacity 0.2s ease-in-out; }
+    transition: opacity 0.2s ease-out; }
     article figure img:hover:not(:first-of-type) {
-      transition: opacity 0.2s ease-in-out;
+      transition: opacity 0.2s ease-in;
       opacity: 0.6;
       cursor: pointer; }
     article figure img:first-of-type {
