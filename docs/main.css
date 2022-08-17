@@ -208,10 +208,9 @@ article .briefing {
 article ol {
   position: relative;
   margin-bottom: 40px;
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
-  float: left;
-  padding: 40px 40px 0px 40px; }
+  padding: 20px 20px 0px 20px; }
   article ol li {
     line-height: 28px; }
     article ol li:not(:first-of-type) {
@@ -359,6 +358,10 @@ article table {
     line-height: 52px;
     width: auto;
     margin: 40px 0; }
+  article ol {
+    width: 50%;
+    float: left;
+    padding: 40px 40px 0px 40px; }
   article p {
     right: -80px;
     padding: 40px; }

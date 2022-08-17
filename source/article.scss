@@ -76,10 +76,9 @@ article {
 	ol {
 		position: relative;
 		margin-bottom: 40px;
-		width: 50%;
+		width: 100%;
 		box-sizing: border-box;
-		float: left;
-		padding: 40px 40px 0px 40px;
+		padding: 20px 20px 0px 20px;
 
 		li {
 			line-height: 28px;
@@ -268,6 +267,12 @@ article {
 			line-height: 52px;
 			width: auto;
 			margin: 40px 0;
+		}
+
+		ol {
+			width: 50%;
+			float: left;
+			padding: 40px 40px 0px 40px;
 		}
 
 		p {
