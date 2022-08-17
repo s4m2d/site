@@ -80,6 +80,7 @@ nav {
     nav a:hover {
       color: rgba(0, 0, 17, 0.3);
       transition: color 0.1s ease-in; }
+
   nav .main {
     padding: 12px 20px 12px 160px;
     position: relative;
