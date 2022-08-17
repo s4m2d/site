@@ -17,8 +17,8 @@ article {
 		margin-top: 80px;
 
 		img {
-			width: 20%;
-			float: left;
+			width: 100%;
+			height: auto;
 			box-sizing: border-box;
 			display: block;
 			border-left: solid 2px transparent;
@@ -281,6 +281,13 @@ article {
 
 			&:last-of-type {
 				padding-bottom: 40px;
+			}
+		}
+
+		figure {
+			img {
+				width: 20%;
+				float: left;
 			}
 		}
 	}

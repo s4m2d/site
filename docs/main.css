@@ -168,8 +168,8 @@ article h1, article h2, article h3, article h4, article h5, article h6 {
 article figure {
   margin-top: 80px; }
   article figure img {
-    width: 20%;
-    float: left;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
     display: block;
     border-left: solid 2px transparent;
@@ -367,6 +367,9 @@ article table {
     padding: 40px; }
     article p:last-of-type {
       padding-bottom: 40px; }
+  article figure img {
+    width: 20%;
+    float: left; }
   .rectangle {
     display: block; } }
 
